@@ -1,0 +1,25 @@
+/* src/components/Header.css */
+header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    text-align: left;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header li {
+    margin: 0 10px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
