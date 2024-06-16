@@ -1,0 +1,42 @@
+/* src/components/Header.css */
+.header-base {
+  background-color: darkblue; /* Light blue background color */
+  padding: 20px;
+  color: black; /* Darker color for contrast with light blue */
+  text-align: left;
+}
+header {
+  background-color: #add8e6; /* Light blue background color */
+  padding: 20px;
+  color: #282c34; /* Darker color for contrast with light blue */
+  text-align: left;
+}
+
+.header-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+}
+  
+  /* header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+  }
+  
+  header li {
+    color: black;
+    margin: 0 10px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  } */
+  

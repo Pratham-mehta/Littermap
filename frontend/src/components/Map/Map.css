@@ -1,0 +1,78 @@
+/* src/components/Map/Map.css */
+
+.map-container {
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-marker {
+  background-image: url('http://localhost:5000/images/marker.png'); /* URL to your marker image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  cursor: pointer;
+  transform: translate(-50%, -50%); /* Center the marker */
+  position: absolute; /* Required for correct positioning */
+}
+
+.centered-popup {
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: 300px;
+  padding: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+
+/* Center the popup on the screen */
+.my-class {
+  position: fixed !important; /* Override the absolute positioning to fixed */
+  top: 0; /* Center vertically */
+  left: 0; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by half its size to truly center */
+  z-index: 1000; /* Ensure it appears above other elements */
+  max-width: 300px;
+}
+
+.my-class .mapboxgl-popup-content {
+  background-color: lightblue; /* Background color */
+  border: 1px solid black; /* Border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding inside the popup */
+  text-align: center; /* Center the text */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3); /* Optional shadow for depth */
+}
+
+.my-class .mapboxgl-popup-tip {
+  display: none; /* Hide the default popup tip */
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Space above buttons */
+}
+
+.popup-buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upvote-btn {
+  background-color: green;
+  color: white;
+}
+
+.downvote-btn {
+  background-color: red;
+  color: white;
+}
